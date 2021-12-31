@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/* Style */
+body {
+    font: 16px/28px arial, sans-serif;
+    background-color: rgb(185, 185, 185);
+    background-image: url(img/bg2.png);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    background-color: white;
+}
+
+.header {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: salmon;
+    padding: 3px;
+}
+
+a:hover {
+    font-size: 20px;
+    background-color: skyblue;
+}
+
+p {
+    text-align: justify;
+}
+
+.hero {
+    height: 350px;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    border-top: 0px solid skyblue;
+    border-left: 0px solid skyblue;
+    border-bottom: 0px solid salmon;
+    border-right: 0px solid salmon;
+}
+
+.hero:hover {
+    transition: 3;
+    border-top: 5px solid skyblue;
+    border-left: 5px solid skyblue;
+    border-bottom: 5px solid salmon;
+    border-right: 5px solid salmon;
+}
+
+.main {
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main .penulis {
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+
+.main p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.sidebar{
+    width: 300px;
+    float: right;
+    padding-top: 20px;
+}
+
+.sidebar h3{
+    font-weight: bold;
+    color: #666;
+}
+
+.sidebar img {
+    float: left;
+}
+
+.sidebar p {
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    line-height: 18px;
+}
+
+.sidebar .berita h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.sidebar .berita img{
+    width: 270px;
+    height: 150px;
+    padding: 0px auto;
+}
+
+.sidebar .berita h4 {
+    font-size: 14px;
+    font-family: 'Times New Roman',
+    Times,
+    serif;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px auto;
+}
+
+.sidebar .berita a{
+    font-weight: bold;
+    color: black;
+}
+
+.sidebar .berita a:hover{
+    padding: 0px;
+    color: salmon;
+}
+
+/* footer */
+
+.footer {
+    background-color: #333;
+    padding: 10px;
+}
+
+.footer .copy {
+    text-align: center;
+    color: rgb(177, 177, 177);
+    font-size: 13px;
+}
+
+/* clearfix */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
